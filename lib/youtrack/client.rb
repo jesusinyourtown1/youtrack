@@ -52,6 +52,7 @@ module Youtrack
     # Returns the status code of the connection call
     def connect!
       @connection = HTTParty.post(File.join(url, "rest/user/login"), body: credentials_hash )
+      #@connection = HTTParty.post(File.join(url, "hub/auth/login"), body: credentials_hash )
       @cookies['Cookie'] = @connection.headers['set-cookie']
       @connection.code
     end
