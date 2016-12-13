@@ -5,6 +5,26 @@ youTrack REST API Client
 [![Build Status](https://travis-ci.org/jwaterfaucett/youtrack.png)](https://travis-ci.org/jwaterfaucett/youtrack)
 [![Gem Version](https://badge.fury.io/rb/youtrack.png)](http://badge.fury.io/rb/youtrack)
 
+
+## New in this release 
+
+###### *(v. v0.0.11.1 - 13/12/16)*
+
+Max issues option & Filter support
+
+- Pass  **max issues** &  **filter** in `get_issues_for` request
+
+Example:
+
+```ruby
+
+filter = "Username: -{No username}" # youtrack-style filter
+max = 5000 # max issues to grab
+client.projects.get_issues_for(project_name, max, filter)
+```
+
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
