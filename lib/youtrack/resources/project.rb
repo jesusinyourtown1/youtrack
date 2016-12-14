@@ -14,9 +14,11 @@ module Youtrack
     #                         then in the response you will get all issues matching request but without first twelve issues found .
     # max           Integer   Maximum number of issues to be imported. If not provided, 10 issues will be imported, by default.
     # updatedAfter  Long      Filter issues by the date of the most recent update. Only issues imported after the specified date will be gotten.
+
+    # Default value for issues to load via API - 500. Check your Settings page in Admin menu - "Max Issues to Export" parameter should be set to issues count that you actually need.
+
     def get_issues_for(project_id, max,filter,options={})
       max = 10 unless max
-
       get("issue/byproject/#{project_id}?max=#{max}&filter=#{filter}")
       response.parsed_response
     end

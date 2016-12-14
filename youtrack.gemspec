@@ -6,13 +6,13 @@ require 'youtrack/version'
 Gem::Specification.new do |spec|
 
   # META
-  spec.name          = "youtrack"
+  spec.name          = "rutrack"
   spec.version       = Youtrack::VERSION
-  spec.authors       = ["John Faucett"]
-  spec.email         = ["jwaterfaucett@gmail.com"]
-  spec.description   = %q{JetBrains youTrack Rest API Client in Ruby}
+  spec.authors       = ["John Faucett - original gem (youtrack)"]
+  spec.email         = ["jesusinyourtown@gmail.com"]
+  spec.description   = %q{JetBrains youTrack Rest API Client in Ruby. Forked from youtrack gem (by John Faucett)}
   spec.summary       = %q{A Ruby REST API Client for JetBrains youTrack software}
-  spec.homepage      = "http://jwaterfaucett.github.io/youtrack/"
+  spec.homepage      = "https://github.com/jesusinyourtown1/youtrack"
   spec.license       = "MIT"
 
   # FILES
