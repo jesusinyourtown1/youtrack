@@ -25,7 +25,7 @@ client.projects.get_issues_for(project_name, max, filter)
 
 Add this line to your application's Gemfile:
 
-    gem 'youtrack', :git => "git://github.com/jesusinyourtown1/youtrack.git", :branch => "new-dev"
+    gem 'rutrack', '0.0.12'
 
 And then execute:
 
